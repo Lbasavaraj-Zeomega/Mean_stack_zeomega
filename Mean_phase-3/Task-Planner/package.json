@@ -1,8 +1,0 @@
-{
-  "dependencies": {
-    "lodash": "^4.17.21",
-    "readline-sync": "^1.4.10",
-    "require": "^2.4.20",
-    "yargs": "^17.3.0"
-  }
-}
