@@ -1,0 +1,17 @@
+     						-----Log Record project-----
+
+Tools used:
+	Nodejs,VSCode
+
+As per the requirement I have created the log record project,
+	I have done a simple calculator which includes addition,subtraction,multiplication,division.
+	In division,when the denominator is 0,
+	the error message is given in the try block and the catch block catches the message and displays it in the error.txt file which i have created separately in the same folder.
+
+githubLink:https://github.com/Lbasavaraj-Zeomega/Assesment/tree/master/Node-Assesment
+
+
+Thank you!
+Basavaraj.
+
+
