@@ -1,0 +1,20 @@
+									-------------Task planner-----------
+									
+									
+									
+Tools used:
+	Nodejs
+	VSCode
+	Git
+	Github
+	
+	
+As per the requirements,
+  I have developed a code for task planner app .
+  In this we can add tasks,delete,read list and list the tasks.
+  In this I lodash to fetch and delete the value .
+  
+  gitLink:https://github.com/Lbasavaraj-Zeomega/Mean-Phase-3/tree/master/Projects/Task_planner
+  
+ Thank you!
+ Basavaraj
