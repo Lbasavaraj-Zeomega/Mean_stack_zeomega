@@ -16,8 +16,10 @@ public password1:string="";
 public firstname1:string="";
 public lastname1:string="";
 public gender1:string="";
+public task:string="";
 
 form!:FormGroup;
+form1!:FormGroup;
   constructor(private formBuilder:FormBuilder,private router:Router) { }
     
   ngOnInit(): void {
@@ -30,6 +32,9 @@ form!:FormGroup;
      email:['',[Validators.required,Validators.email]],
      password:['',[Validators.required,Validators.minLength(8)]]
    });
+   this.form1= this.formBuilder.group({
+    task:['',Validators.required]
+  });
   
   }
   correct=false;
@@ -48,6 +53,7 @@ form!:FormGroup;
     {
     this.issubmit=true;
     this.correct=true;
+    
     setInterval(()=>{
       this.correct=false;
     },3000);
@@ -60,6 +66,20 @@ else{
   }, 3000);
   
 }}
+get ff(){
+  return this.form1.controls;
+}
+  submitted1=false;
+  
+  click1() {
+    this.submitted1=true;
+    
+    if(this.form1.invalid){
+      return;
+    }
+    this.task=this.form1.value.task;
+}
+
 
 }
 
