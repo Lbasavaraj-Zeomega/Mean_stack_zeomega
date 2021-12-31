@@ -34,46 +34,6 @@ function showData() {
 
       // Construct card content
       const content = `
-      <style>
-      .card {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        min-width: 0;
-        word-wrap: break-word;
-        background-color: #fff;
-        background-clip: border-box;
-        border: 1px solid rgba(0,0,0,.125);
-        border-radius: .25rem;
-    }
-    
-    .card-body {
-      background-color:black;
-      color:white;
-        flex: 1 1 auto;
-        padding: 1.25rem;
-    }
-    
-    .card-title {
-        margin-bottom: .75rem;
-    }
-    
-    .card-img-top {
-        width: 100%;
-        border-top-left-radius: calc(.25rem - 1px);
-        border-top-right-radius: calc(.25rem - 1px);
-    }
-    
-    .text-left {
-        text-align: left!important;
-    }
-    .pb-2, .py-2 {
-        padding-bottom: .5rem!important;
-    }
-    .pt-2, .py-2 {
-        padding-top: .5rem!important;
-    }
-    </style>
       <div class="col-md-4 col-sm-4 shadow p-3 mb-5 bg-white rounded ">
       <div class="card bg-danger text-black cl-4">
       <div class="card-body text-center" >
