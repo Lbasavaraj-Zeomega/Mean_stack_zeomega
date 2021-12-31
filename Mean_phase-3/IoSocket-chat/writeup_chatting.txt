@@ -1,0 +1,21 @@
+									-------------Chatting with io Socket-----------
+									
+									
+									
+Tools used:
+	Node JS: To develop a chat functionality using socket.io.
+
+	Git: To connect and push files from the local system to GitHub
+
+	GitHub: To store your application
+	
+	
+As per the requirements,
+  I have developed a code ChatBot app .
+  In this we can give user name and through the user name we can chat with user.
+  In this I used scoket.io and express .
+  
+  gitLink:https://github.com/Lbasavaraj-Zeomega/Zeomega_Tarining/tree/master/Mean_phase-3/Projects/Chatting%20with%20io%20socket
+  
+ Thank you!
+ Basavaraj
