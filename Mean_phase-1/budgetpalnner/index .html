@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script class="jsbin" src="http://ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
+  
+    
+</script>
+<meta charset=utf-8 />
+<title>Budget Planning</title>
+<link rel="stylesheet" href="index (2).css">
+</head>
+<body>
+    
+    <section>
+        <h1 style="color: rgb(175, 152, 197);"">Welcome to BugetTrack <bold>website</bold></h1> 
+        <button  onclick="asd(0)">AddDeatlis</button>
+        <button onclick="checkDetails()" >CheckDeatlis</button>
+    </section>
+    <div id="asd" style="display:none;">
+    <h1>Please enter data</h1>
+    <form action="#"  method="post"  >
+        <label for="pname" ></label>Product Name</label>
+      <input type="text" id="pname"  placeholder=" Enter Product Name" required ">
+     <label for="price" >Price</label>
+      <input type="number" id="price"  placeholder="Enter the product Price"  required>
+    <button type="button" onclick="addDetails()"  id="btn">ADD</button>
+    <button type="button"  onclick="asd(1)" id="btn">EXIT</button>
+    
+    </form>
+</div>
+  <div id="display"></div>
+ <script id="jsbin-javascript" src="index.js"></script>
+</body>
+</html> 

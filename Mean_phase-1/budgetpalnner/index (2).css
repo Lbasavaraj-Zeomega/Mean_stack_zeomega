@@ -1,0 +1,56 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    background: #e09909;
+    color: #fff;
+}
+section{
+    padding: 50px 400px;
+}
+div.form{
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    padding: 50px 400px;
+    }
+input, select {
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid rgb(14, 11, 11);
+border-radius: 4px;
+box-sizing: border-box;
+}
+
+
+button {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+#btn{
+    width: 10%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(14, 11, 11);
+    border-radius: 4px;
+    box-sizing: border-box;
+    }
+    
+#display{
+        padding: 50px 500px; 
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        color: white;
+        
+    }
+      
+      
