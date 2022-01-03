@@ -1,0 +1,52 @@
+									-------------Call Record Anlysis-----------
+									
+									
+									
+Tools used:
+	MongoDB: A NoSQL database
+
+	MongoDB concepts: Scaling, replication, relationships, and operations in MongoDB
+
+	call_data.json file provided on LMS
+	
+Data should contain following columns
+
+	Source: Phone number of caller
+
+	Destination: Phone number of call receiver
+
+	Source_location: Caller’s city
+
+	Destination_location: Call receiver’s city
+
+	Call_duration: Phone call duration
+
+	Roaming:  Flag to check if caller is in roaming
+
+	Call_charge: Money charged for call
+
+As per the requirements,
+  I have wrote the Querys for all problem .
+  In this 1st i have created database  and created the collection after that  imported the database call_data.json.
+  Create database in MangoDb:
+	-->use call_record_anlysis;
+	Create collection call_data:
+		-->db.createCollection('call_data');
+	import call_data.json file in that bd
+		--> mongoimport --db call_record_anlysis --collection call_data < C:\Users\lbasavaraj\Desktop\Basavaraj_Zeomega\Training\Mean_phase-3\Call_Record_Anlyasis\call_data.json --jsonArry
+	
+
+	performe following task:
+		1.Insert 1 record in database;
+			--> db.call_data.insert({"source" : "+919612345670", "destination" : "+919612345671", "source_location": "Delhi", "destination_location": "Mumbai", "call_duration": 2.03, "roaming": "false", "call_charge":2.03 })
+		
+		2.Cehck total number of call made roaming(roaming=true):
+			-->db.call_data.find( {call_duration : {$gt :10.00} }).count()
+	
+		3.Count of call with call duration > 10 minutes:
+			--> db.call_data.find({roaming:"true"}).count()
+  
+
+  
+ Thank you!
+ Basavaraj

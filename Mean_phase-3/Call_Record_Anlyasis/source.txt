@@ -1,0 +1,18 @@
+				---------------------Call Record Anlysis-----------------------
+Create database in MangoDb:
+	-->use call_record_anlysis;
+Create collection call_data:
+	-->db.createCollection('call_data');
+import call_data.json file in that db:
+	--> mongoimport --db call_record_anlysis --collection call_data < C:\Users\lbasavaraj\Desktop\Basavaraj_Zeomega\Training\Mean_phase-3\Call_Record_Anlyasis\call_data.json --jsonArry
+	
+
+performe following task:
+	1.Insert 1 record in database;
+		--> db.call_data.insert({"source" : "+919612345670", "destination" : "+919612345671", "source_location": "Delhi", "destination_location": "Mumbai", "call_duration": 2.03, "roaming": "false", "call_charge":2.03 })
+		
+	2.Cehck total number of call made roaming(roaming=true):
+		-->db.call_data.find( {call_duration : {$gt :10.00} }).count()
+	
+	3.Count of call with call duration > 10 minutes:
+		--> db.call_data.find({roaming:"true"}).count()
