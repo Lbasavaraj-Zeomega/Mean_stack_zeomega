@@ -1,0 +1,78 @@
+i=1
+while(i!=0):
+    try:
+        name=input("Enter Name: ")
+        sex = input("Enter sex: ")
+        age= int(input("Enter age: "))
+        height= float(input("Enter height in centimeter: "))
+        weight= int(input("Enter weight in kgs"))
+        i=0
+    except ValueError as e :
+        print(e)
+
+print("Please enter workout details:\n")
+days=[]
+steps=[]
+hr=[]
+mn=[]
+sec=[]
+try:
+    
+    for i in range(1,3):
+        days.append(int(input("Enter day: ")))
+        steps.append(int(input("Enter steps: ")))
+        alltimes = input("Enter times in HH:MM:SS\n").split()
+        for time in alltimes:
+            hour, min, secs = [int(i) for i in time.split(":")]
+            hr.append(int(hour))
+            mn.append(int(min))
+            sec.append(int(secs))
+except ValueError as e:
+        print(e)
+
+h1=(height/100)
+bmi= (weight/(h1**2))
+#print(bmi)
+
+count =0
+distance=[]
+for i in range(len(steps)):
+    dist = (steps[i] * 0.8) / 1000
+    distance.append(dist)
+
+    if steps[i] != 0:
+        count =count+1
+
+
+hrsecs=[]
+mnsecs=[]
+step_time=[]
+speed=[]
+for i in range(len(hr)):
+    h=hr[i]*3600
+    hrsecs.append(int(h))
+    m=mn[i]*60
+    mnsecs.append(int(m))
+for i in range(len(hrsecs)):
+    step_time.append(float((hrsecs[i]+mnsecs[i]+sec[i])/3600))
+    speed.append(float(distance[i]/step_time[i]))
+
+max_speed=max(speed)
+long_dist=max(distance)
+speed.sort()
+min_speed=speed[0]
+distance.sort()
+short_dist=distance[0]
+avg_speed=(sum(speed)/len(speed))
+avg_dist=(sum(distance)/len(distance))
+
+print("Hi ",name)
+print("Your BMI is: ",bmi)
+print("Your Weekly achievement is as follows: ")
+print("*****You get a ",count,"/7 award.*****")
+print("Your Fastest Speed is: ",max_speed)
+print("Your Longest Distance is: ",long_dist)
+print("Your Slowest Speed is: ",min_speed)
+print("Your Shortest Distance is:", short_dist)
+print("Your Weekly Average Speed is:",avg_speed)
+print("Your Weekly Average Distance is: ",avg_dist)

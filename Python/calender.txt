@@ -1,0 +1,62 @@
+import datetime as dt
+from IPython.display import display,HTML
+import calendar
+import re
+t = dt.datetime.today()
+def show(y,m):
+    s=calendar.HTMLCalendar().formatmonth (y,m)
+    ss = s.replace('>%i<'%t.day, ' bgcolor="#66ff66"><b><u>%i</u></b><'%t.day)
+    display(HTML(ss))
+def cal(number):
+    year=t.year
+    if number>=0:
+        month=t.month+number
+        if month>12:
+            year=year+1
+            month=month-12
+        show(year,month)
+    else:
+        month=t.month+number
+        if month<=0:
+            year=year-1
+            month=month+12
+        show(year,month)
+def main():
+    u1 = 'Basavaraj'
+    p1 = 'Basavaraj@12'
+    username = input('Enter the username for log in into Calendar: ')
+    password = input('Enter your Password:')
+   
+    if username==u1 and password==p1:
+        show(t.year,t.month)
+        i=1
+        while(i==1):
+            try:
+                number=int(input("Enter the Month between[-12 to 12]: "))
+                if number>=-12 and number<=12:
+                    cal(number)
+                    num=int(input("Do you want to continue, Enter 1 /0: ")) 
+                    i=num
+                else:
+                    print("Invalid Input\nEnter value between -12 to +12")
+            except ValueError as e:
+                print(e,"\nEnter only Integer between -12 to +12")
+        else:
+            print("Thank you")
+    else:
+            print('If you need help regarding student credential, simple type help')
+            i=1
+            while(i!=0):
+                h = input('Enter help:')
+                if h.lower()=='help':
+                    print('Help: This application should be run with the following',end=' ')
+                    print('command line parameters: a positive integer, a negative integer or zero.',end=' ')
+                    print('The positive integer cannot be more than 12 or less than -12.')
+                    print(f'username is {u1}')
+                    print(f'password is {p1}')
+                    i=0
+                    break
+                else:
+                    print("Invalid input, Please try again")
+            main()
+main()   
