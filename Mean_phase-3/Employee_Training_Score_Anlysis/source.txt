@@ -1,0 +1,14 @@
+As per the requirements I have imported employee_data.json file and I used the below query:
+	mongoimport --db employee --collection employee_data <C:\Users\lbasavaraj\Desktop\Basavaraj_Zeomega\Training\Mean_phase-3\Employee_Training_Score_Anlysis\employee_data.json --jsonArray
+	
+	1) To find the number of employees who failed in term-1
+	        --> db.employee_data.find({term1:{$lt:37}}).pretty()
+			
+	2) To find the average score of employees for term 1
+	        -->db.employee_data.aggregate([{$group:{"_id":"_id",avgvalue:{$avg:"$term1"}}}])
+			
+	3) To find employees who passed in all three terms
+	        -->db.employee_data.find({$and:[{term1:{$gte:37}},{term2:{$gte:37}},{term3:{$gte:37}}]});
+			
+	4) To find the average score of employees
+	        -->db.employee_data.aggregate({$project:{avg_emp:{$avg:["$term1","$term2","$term3"]}}})
