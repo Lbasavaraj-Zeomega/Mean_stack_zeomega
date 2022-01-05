@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chat app</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <section class="chat__section">
+        <div class="brand">
+            <img height="40" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx2Azgvxyt3NxQmmzHOCr2-m7M4E4chZj6sURZW5XhdMJ7vCQ8hst6yxWxZWMrIvyWhAk&usqp=CAU" alt="">
+            <h1>Chat Log</h1>
+        </div>
+        <div class="message__area"></div>
+        <div>
+            <textarea id="textarea" cols="30" rows="1" placeholder="Write a message..."></textarea>
+        </div>
+    </section>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+    <script>
+        (function(){
+    var element=function(id){
+        return document.getElementsByClassName(id);
+    }
+    //get elemts
+    var status = element('status');
+    var messages= element('messages');
+    var textarea=element('textarea');
+    var username= element('username');
+
+    //set default status
+    var statusDefault=status.textContent;
+    var setStatus= function(s){
+        //set status
+        status.textContent=s;
+    }
+})
+    </script>
+</body>
+
+</html>
