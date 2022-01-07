@@ -1,7 +1,7 @@
-// const express = require('express')
-// const app = express()
-// const http = require('http').createServer(app)
-// const PORT = process.env.PORT || 3000
+const express = require('express')
+const app = express()
+const http = require('http').createServer(app)
+const PORT = process.env.PORT || 3000
 const mongo =require('mongodb').MongoClient;
 const client=require('socket.io')(4000).sockets;
 
@@ -61,23 +61,23 @@ mongo.connect('mongodb://127.0.0.1/mongochat',function(err,db){
        })
     });
 });
-// http.listen(PORT, () => {
-//     console.log(`Listening on port ${PORT}`)
-// })
+http.listen(PORT, () => {
+    console.log(`Listening on port ${PORT}`)
+})
 
-// app.use(express.static(__dirname + '/public'))
+app.use(express.static(__dirname + '/public'))
 
-// app.get('/', (req, res) => {
-//     res.sendFile(__dirname + '/index.html')
-// })
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + '/index.html')
+})
 
-// // Socket 
-// const io = require('socket.io')(http)
+// Socket 
+const io = require('socket.io')(http)
 
-// io.on('connection', (socket) => {
-//     console.log('Connected...')
-//     socket.on('message', (msg) => {
-//         socket.broadcast.emit('message', msg)
-//     })
+io.on('connection', (socket) => {
+    console.log('Connected...')
+    socket.on('message', (msg) => {
+        socket.broadcast.emit('message', msg)
+    })
 
-// })
+})

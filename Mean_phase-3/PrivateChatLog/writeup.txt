@@ -1,0 +1,36 @@
+                                                                   Chat App
+				  
+				  
+				  
+Tools used:
+	SocketIo
+	Mongodb
+	Nodejs
+	VS Code
+	Express JS
+	
+	
+1)Created the Private Chat app using nodejs socketio and mongodb
+2)The front end interfaces used are html and css
+3)The backend interface are nodejs and express
+4)Socket.io for client and server side interactions
+5)Mongodb is the database used for storing
+6)JavaScript isused for both front and Backend
+7)The app contains real-time chat between two private users
+8)The chat history can be retirieved later when the chat is accessed by the user
+9)The chat between two people will not be broadcasted to other users online
+10)If an active user sends a message to another user while he is offline, the other user will be able to retirieve message later when he accesses the chat
+11)We also need to install dependencies like mongoodb,express,moment,socket.io,nodemon
+12)The nodemon is used for running the server continuously
+13)once we run the command npm start the server is connected on the port 5000
+14)After server connection using browser we need search in path localhost:5000/chat.html
+15)It'll display a form which shows "from" , "to","chat". 
+16)After clicking on "chat" ,It"ll take to the private chat room.
+17)And it'll display all the messages.
+
+
+
+Thank you!
+Basavaraj 
+
+

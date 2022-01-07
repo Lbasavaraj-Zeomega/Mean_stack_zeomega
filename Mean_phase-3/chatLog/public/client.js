@@ -18,14 +18,13 @@ function sendMessage(message) {
         user: name,
         message: message.trim()
     }
-    // Append 
+    // Append
     appendMessage(msg, 'outgoing')
     textarea.value = ''
     scrollToBottom()
-
-    // Send to server 
+    // Send to server
     socket.emit('message', msg)
-
+   
 }
 
 function appendMessage(msg, type) {
