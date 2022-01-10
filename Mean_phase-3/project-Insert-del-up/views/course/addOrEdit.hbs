@@ -1,0 +1,22 @@
+<h3>{{viewTitle}}</h3>
+
+<form action="/course" method="POST" autocomplete="off">
+    <input type="hidden" name="_id" value="{{employee._id}}">
+    <div class="form-group">
+        <label>Course Name</label>
+        <input type="text" class="form-control" name="courseName" placeholder="Course Name" value="{{employee.courseName}}">
+       
+    <div class="form-group">
+        <label>Description</label>
+        <input type="text" class="form-control" name="disc" placeholder="Discription" value="{{employee.disc}}">
+      </div>
+        <div class="form-group">
+            <label>Price</label>
+            <input type="text" class="form-control" name="price" placeholder="Price" value="{{employee.price}}">
+        </div>
+   
+    <div class="form-group">
+        <button type="submit" class="btn btn-info"><i class="fa fa-database"></i> Submit</button>
+        <a class="btn btn-secondary" href="/course/list"><i class="fa fa-list-alt"></i> View All</a>
+    </div>
+</form>
