@@ -1,0 +1,23 @@
+                                  --------------------------------Building an Application Using Grunt Build Tool-----------------------------
+				  
+				  
+				  
+Tools used:
+	Grunt.js
+	Live reload
+	
+1)Created the Application using grunt build tool
+2)Used the Grunt-Watch for continues execution of the Application
+3)Used Grunt-imagemin for image
+4)used Grunt-jshint for JavaScript files
+5)used Grunt-compress for compressing the files
+6)used Grunt-qunit for unit testing
+7)used Grunt-connect for connecting localhost
+8)used concurrent for concurrent execution of application
+
+
+
+Thank you!
+Basavaraj 
+
+
