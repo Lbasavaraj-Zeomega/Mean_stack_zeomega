@@ -1,0 +1,18 @@
+                          ------------------Cart Mangament----------------
+Tools Used:
+	ypeScript: To develop a simple cart management application.  
+
+	Git: To connect and push files from the local system to GitHub.
+
+	GitHub: To store your TypeScript code in GitHub.
+
+As per the requirements,
+		I have developed an Cart Managment.
+		In this I have used typescript,
+			I created dummy data for cart and it will dispaly on the browser,once we add it will go to the cart.
+			And if we give checkout it will so all the added project.
+		
+		
+		
+	Thank you!
+	Basavaraj 

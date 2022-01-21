@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Management</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+   
+    <script src = "cart.js"></script>
+</head>
+
+<body onload=updateCart()>
+    <div class="section">
+        <h1 class="title">Shopping Cart</h1>
+    </div>
+
+    <div class="section is-flex is-justify-content-space-between">
+        <h1 class="subtitle ">Items in cart: <span id="size"></span></h1>
+        <a href="cart.html" class="button is-normal ">Checkout</a></div>
+    </div>
+
+    <div class="section is-flex is-justify-content-space-between" id="products">
+        <div class="card">
+            <div class="card-content is-center">
+              <div class="content is-center">
+                Playstation 5 Digital
+                <br>
+                Price: $399
+              </div>
+            </div>
+            <footer class="card-content">
+              <button class="button is-normal" onClick=addDigital()>Add</button>
+            </footer>
+          </div>
+
+          <div class="card">
+            <div class="card-content is-center">
+              <div class="content is-center">
+                Playstation 5 Disc
+                <br>
+                Price: $499
+              </div>
+            </div>
+            <footer class="card-content">
+              <button class="button is-normal" onClick=addDisc()>Add</button>
+            </footer>
+          </div>
+
+          <div class="card">
+           <div class="card-content is-center">
+              <div class="content is-center">
+                XBOX Series S
+                <br>
+                Price: $300
+              </div>
+            </div>
+            <footer class="card-content">
+              <button class="button is-normal" onClick=addSeriesS()>Add</button>
+            </footer>
+          </div>
+          
+          <div class="card">
+            <div class="card-content is-center">
+              <div class="content is-center">
+                XBOX Series X
+                <br>
+                Price: $500
+              </div>
+            </div>
+            <footer class="card-content">
+              <button class="button is-normal" onClick=addSeriesX()>Add</button>
+            </footer>
+          </div>
+
+    </div>
+    
+</body>
+</html>
