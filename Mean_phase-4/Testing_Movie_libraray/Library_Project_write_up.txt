@@ -1,0 +1,28 @@
+                 ----------------Testing for Movie Libaray-----------------
+
+
+
+Tools used:
+	1)asmine: An open-source JavaScript framework
+
+	2)Karma: An open-source software testing tool for JavaScript
+
+	3)Backbone.js
+
+	4)Git: To connect and push files from the local system to GitHub
+
+	5)GitHub: To store the application code and track its versions
+
+
+Perfomred:
+	1)I created the movie library that contain the movie-name,rating,genre,comment
+
+	2)I am testing that movie library using karma tool
+
+	3)In this project, i wrote 14 specifications,
+	skipped one specfication as per your reference and other all 13 specifications are passed
+
+	4)I attached output screenshots and github link for your reference
+
+
+
