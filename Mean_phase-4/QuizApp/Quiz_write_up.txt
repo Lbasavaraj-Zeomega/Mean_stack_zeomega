@@ -2,7 +2,7 @@
 
 check on port  :http://54.160.207.119/
 
-link:https://github.com/rvishwanath123/ec2-deployment
+https://github.com/Lbasavaraj-Zeomega/Mean_stack_zeomega/tree/master/Mean_phase-4/QuizApp
 
 Description :
 		As a MEAN Stack Developer, you have to deploy an Angular application on Docker container on an EC2 instance.
@@ -18,18 +18,18 @@ TOOLS USED :
 	    GITHUB
 
 STEPS FOR CREATION OF THE PROJECT :
-1.We have created the angular with node js application 
-2.after creation we have build the application using the command ng build --prod.
-3.after that dist file will we created .
-4.we need to create the docker file in the angular application.
-5.created the angular instance of windows 2012 version.
-6.we have configute the ec2 instance and we have deployed our dockerized application on the ec2 instance .
-7.after deploying the angular application,copy the ipv4 public address.
-8.run the ip adress on the browser the application works perfectly.
+	1.We have created the angular with node js application 
+	2.after creation we have build the application using the command ng build --prod.
+	3.after that dist file will we created .
+	4.we need to create the docker file in the angular application.
+	5.created the angular instance of windows 2012 version.
+	6.we have configute the ec2 instance and we have deployed our dockerized application on the ec2 instance .
+	7.after deploying the angular application,copy the ipv4 public address.
+	8.run the ip adress on the browser the application works perfectly.
 
 
 sceenshots and code has be uploded to the git hub for the reference.
 
-regards,
-thank you 
-vishwanath C R
+
+Thank you,
+Basavaraj:).
