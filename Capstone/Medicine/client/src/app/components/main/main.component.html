@@ -1,9 +1,6 @@
 <div class="row">
   <div *ngIf="!authService.loggedIn()" class="col-md">
-    <app-login></app-login>
-    <app-register></app-register>
-  </div>
-  <div class="col-md border bg-light">
+    
     <h1 class="text-danger text-center m-3">
       About Medicine 
     </h1>
@@ -16,6 +13,9 @@
         src="https://expandurbusiness.com/assets/images/categories/2-6.jpg"
         class="img-fluid rounded border border-danger p-1" alt="Products Info" />
     </p>
+  </div>
+  <div class="col-md border bg-light">
+    <app-login></app-login>
   </div>
   <div class="col-md bg-dark p-4">
     <p class="mx-4"><img src="https://i0.wp.com/www.medelita.com/media/wysiwyg/blog/nurses_hippocratic_oath_cane.jpg" class="img-fluid rounded" alt="Products Info" /></p>
