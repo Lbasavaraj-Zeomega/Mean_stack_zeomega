@@ -62,7 +62,7 @@ export class MainComponent implements OnInit {
   onError() {
     this.isLoading=false
     this.modalHeader = "An Error Has Occurred";
-    this.modalBody = "Could not load ngMarket orders & product information do to server communication problem. Please try again later.";
+    this.modalBody = "Could not load Medicine orders & product information do to server communication problem. Please try again later.";
     this.openModal();
   }
 }

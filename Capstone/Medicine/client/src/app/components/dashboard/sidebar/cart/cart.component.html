@@ -51,7 +51,7 @@
             <span class="badge badge-dark mr-1">Quantity: {{ item.quantity }}</span>
           </div>
           <div>
-            <span class="badge badge-dark mr-1">Price: {{ item.prod_total | currency: "ILS":"symbol":"1.2-2" }}</span>
+            <span class="badge badge-dark mr-1">Price: {{ item.prod_total | currency: "&#x20B9; " }}</span>
           </div>
           <div *ngIf="!isOrdered && (user?.cart.status == 'open' || user?.cart.status == 'new')">
             <button (click)="onRemoveProductFromCart(item)" class="btn badge badge-danger text-right">
@@ -66,7 +66,7 @@
 <!-- cart total -->
 <div class="row p-1">
   <div class="col">
-    <span class="btn btn-dark disabled">Total: {{ total | currency: "ILS":"symbol":"1.2-2" }}</span>
+    <span class="btn btn-dark disabled">Total: {{ total | currency: "&#x20B9; " }}</span>
   </div>
   <!-- order -->
   <div *ngIf="(!isOrdered && user?.cart.status == 'open') || user?.cart.status == 'new'" class="col text-right">

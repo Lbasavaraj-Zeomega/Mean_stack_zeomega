@@ -39,11 +39,11 @@
           <tr *ngFor="let product of orders?.products">
             <td>{{ product?.prod_name }}</td>
             <td>{{ product?.quantity }}</td>
-            <td>{{ product?.prod_total | currency: "ILS":"symbol":"1.2-2" }}</td>
+            <td>{{ product?.prod_total | currency: "&#x20B9; " }}</td>
           </tr>
         </tbody>
       </table>
-      <strong>For total amount of: {{ orders?.total | currency: "ILS":"symbol":"1.2-2" }}</strong>
+      <strong>For total amount of: {{ orders?.total | currency: "&#x20B9; " }}</strong>
     </div>
   </div>
 </div>

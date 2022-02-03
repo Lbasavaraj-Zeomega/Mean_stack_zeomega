@@ -81,7 +81,7 @@
               </div>
               <div class="p-1">
                 <h6>Price /per unit</h6>
-                {{ product.price | currency: "ILS":"symbol":"1.2-2" }}
+                {{ product.price | currency: "&#x20B9;" }}
               </div>
               <div class="p-1">
                 <h6>Quantity</h6>
@@ -97,7 +97,7 @@
               </div>
               <div class="p-1">
                 <h6>Total Price</h6>
-                {{ product.price * product.quantity | currency: "ILS":"symbol":"1.2-2" }}
+                {{ product.price * product.quantity | currency: "&#x20B9; " }}
               </div>
             </div>
             <!-- Modal footer -->
