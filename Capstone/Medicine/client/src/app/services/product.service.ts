@@ -5,7 +5,7 @@ import { BehaviorSubject } from "rxjs";
 
 @Injectable({ providedIn: "root" })
 export class ProductService {
-  private url = "http://localhost:5000/shop/info";
+  private url = "http://localhost:5000/shop";
 
   private products = new BehaviorSubject(null);
   currentProducts = this.products.asObservable();

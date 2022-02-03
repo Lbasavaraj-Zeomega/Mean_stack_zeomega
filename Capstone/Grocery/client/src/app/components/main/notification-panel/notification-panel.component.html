@@ -13,7 +13,7 @@
       <p>
         You have an open cart from <strong>{{ user?.cart.created | date: "medium" }}</strong>
       </p>
-      <p>for total amount of {{ total | currency: "ILS":"symbol":"1.2-2" }}</p>
+      <p>for total amount of {{ total | currency: "&#x20B9; " }}</p>
     </div>
     <!-- closed cart -->
     <p *ngIf="user?.cart.status == 'closed'">

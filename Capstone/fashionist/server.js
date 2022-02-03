@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const colors = require("colors");
-var db = "mongodb://localhost:27017/Medicine";
+var db = "mongodb://localhost:27017/Fashion";
 mongoose.connect(db,{useNewUrlParser:true,useUnifiedTopology:true});
 const userRoutes = require("./routes/user");
 const shopRoutes = require("./routes/shop");
@@ -26,6 +26,6 @@ mongoose
     const server = app.listen(port, () => {
       console.log("Server running on port".cyan, colors.yellow(port));
     });
-    console.log("\nConnected to".cyan, "Medicine".magenta, "database".cyan);
+    console.log("\nConnected to".cyan, "Fashion".magenta, "database".cyan);
   })
   .catch(err => console.log("Error connecting to database".cyan, err));

@@ -1,24 +1,25 @@
 <div class="row">
   <div class="col-md border bg-light">
-    
+
     <h1 class="text-danger text-center m-3">
-      About Medicine 
+      About Grocery
     </h1>
     <p class="m-4">
-      Medicine e-commerce includes buying and selling medical devices and drugs and offers advantages such as
-      convenience, lower prices & a wide range of products.
+      Grocery shopping is where the health, value, and pleasure of cooking converge. It's in the store when you can
+      limit the amount of chemicals or hormones in your food. This is also when you'll choose the best ways to add
+      flavor to what you're about to eat.
     </p>
     <p class="text-center">
-      <img
-        src="https://expandurbusiness.com/assets/images/categories/2-6.jpg"
+      <img src="https://www.groceryworld.in/images/logofoot.png"
         class="img-fluid rounded border border-danger p-1" alt="Products Info" />
     </p>
   </div>
-  <div *ngIf="!authService.loggedIn()" class="col-md" >
+  <div *ngIf="!authService.loggedIn()" class="col-md">
     <app-login></app-login>
   </div>
   <div class="col-md bg-dark p-4">
-    <p class="mx-4"><img src="https://i0.wp.com/www.medelita.com/media/wysiwyg/blog/nurses_hippocratic_oath_cane.jpg" class="img-fluid rounded" alt="Products Info" /></p>
+    <p class="mx-4"><img src="https://thumbor.thedailymeal.com/ZO7GdYykeuOOeIATVGhQwMC1_Sc=/870x565/https://www.thedailymeal.com/sites/default/files/2016/04/18/1_woolworths_flickr.png"
+        class="img-fluid rounded" alt="Products Info" /></p>
     <!-- spinner -->
     <div *ngIf="isLoading" class="spinner-border text-danger" role="status">
       <span class="sr-only">Loading...</span>
