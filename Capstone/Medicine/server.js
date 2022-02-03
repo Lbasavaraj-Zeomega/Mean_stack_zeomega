@@ -22,10 +22,10 @@ app.use("/shop", shopRoutes);
 mongoose
   .connect(db)
   .then(() => {
-    const port = process.env.PORT || 5000;
+    const port = process.env.PORT || 4000;
     const server = app.listen(port, () => {
       console.log("Server running on port".cyan, colors.yellow(port));
     });
-    console.log("\nConnected to".cyan, "ng-market".magenta, "database".cyan);
+    console.log("\nConnected to".cyan, "Medicine".magenta, "database".cyan);
   })
   .catch(err => console.log("Error connecting to database".cyan, err));

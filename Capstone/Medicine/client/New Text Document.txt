@@ -1,0 +1,1 @@
+pscp -i C:\Users\lbasavaraj\Downloads\exmple.ppk -r C:\Users\lbasavaraj\Desktop\Basavaraj_Zeomega\Training\Capstone\Medicine\client\dist\client\* ubuntu@ec2-35-174-156-245.compute-1.amazonaws.com:/front-end
